@@ -1,0 +1,1647 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  
+<!-- Mirrored from netgon.ru/themeforest/yourtravelworld_html/ by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 24 May 2022 05:34:48 GMT -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Looking for something amazing?">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="HandheldFriendly" content="True">
+    <title>Ticketifly </title>
+    <!-- Edge and IE-->
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- Add to homescreen for Chrome on Android-->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Looking for something amazing?">
+    <link rel="icon" sizes="192x192" href="img/touch/chrome-touch-icon-192x192.png">
+    <!-- Add to homescreen for Safari on iOS-->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Your Travel World">
+    <link rel="apple-touch-icon" href="img/touch/apple-touch-icon.png">
+    <!-- Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,500,600,700%7CPoppins:400,500,600,700" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="css/jquery-ui.structure.min.css"> -->
+    <!-- <link rel="stylesheet" href="css/jquery-ui.theme.min.css"> -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+   />
+    <!-- <link id="cssRtl" rel="stylesheet" href="#"> -->
+    <!-- <link rel="stylesheet" href="css/flatpickr.min.css"> -->
+    <!-- <link rel="stylesheet" href="css/font-awesome.min.css"> -->
+    <!-- <link rel="stylesheet" href="css/fontawesome-stars-o.css"> -->
+    <!-- <link rel="stylesheet" href="css/swiper.min.css"> -->
+    <!-- <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css"> -->
+    <!-- <link rel="stylesheet" href="css/select2.min.css"> -->
+    <!-- <link rel="stylesheet" href="css/nouislider.min.css"> -->
+    <!-- <link rel="stylesheet" href="css/blueimp-gallery.min.css"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"  />
+     <!-- slick slider -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"  />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+
+     <link id="cssTheme" rel="stylesheet" href="skins/style-default.css">
+    <link rel="stylesheet" href="style.min.css">
+    <link rel="stylesheet" href="style1.css">
+  </head>
+  <body class="load" >
+
+    <!-- <div class="progress-load js-progress-load"></div>
+    <div class="demo-panel bx4dp d-none d-sm-block" id="demoSwitcher">
+      <div class="container">
+        <div class="demo-panel__toggle btn btn-light text-primary shadow-sm js-panel-toggle"><i class="fa fa-cog"></i></div>
+      </div>
+      <div class="demo-panel__content bg-light pt-3">
+        <div class="container">
+          <div class="row flex-nowrap">
+            <div class="col-auto mb-2 d-flex align-items-center">
+              <h4>Colors</h4>
+              <div class="demo-panel__colors nav"><a class="nav-link js-toggle-theme is-active" href="#" data-path="skins/style-default.css" role="button"></a><a class="nav-link js-toggle-theme" href="#" data-path="skins/style-orange.css" role="button"></a><a class="nav-link js-toggle-theme" href="#" data-path="skins/style-green.css" role="button"></a><a class="nav-link js-toggle-theme" href="#" data-path="skins/style-red.css" role="button"></a><a class="nav-link js-toggle-theme" href="#" data-path="skins/style-purple.css" role="button"></a><a class="nav-link js-toggle-theme" href="#" data-path="skins/style-pink.css" role="button"></a>
+              </div>
+            </div>
+            <div class="col-auto mb-2 d-flex align-items-center">
+              <h4>RTL</h4>
+              <button class="btn-switch text-primary js-switch-rtl" type="button" data-switch="css/bootstrap-rtl.min.css"><span class="bar bg-primary"></span><span class="toggle bg-secondary"></span></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> -->
+<div id="overlay" onclick="of()"></div>
+    <!-- login area  -->
+    <div class="modal-account modal" id="modalAccount" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <ul class="modal-account__tabs nav nav-tabs d-flex js-account-tabs" id="accountTabs" role="tablist">
+              <li class="nav-item w-50"><a class="nav-link" data-toggle="tab" href="#accountLogin" role="tab" aria-controls="accountLogin" aria-selected="false">Login</a></li>
+              <li class="nav-item w-50"><a class="nav-link" data-toggle="tab" href="#accountRegist" role="tab" aria-controls="accountRegist" aria-selected="false">Sign Up</a></li>
+              <li><a class="nav-link p-0 border-0" data-toggle="tab" href="#accountForgot" role="tab" aria-controls="accountForgot" aria-selected="false"></a></li>
+            </ul>
+            <button class="btn btn-light close pointer" type="button" data-dismiss="modal" aria-label="close"><span class="icon text-dark" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 510 510"><path d="M255 0C114.75 0 0 114.75 0 255s114.75 255 255 255 255-114.75 255-255S395.25 0 255 0zm127.5 346.8l-35.7 35.7-91.8-91.8-91.8 91.8-35.7-35.7 91.8-91.8-91.8-91.8 35.7-35.7 91.8 91.8 91.8-91.8 35.7 35.7-91.8 91.8 91.8 91.8z"/></svg></span></button>
+          </div>
+          <div class="modal-body">
+            <div class="tab-content">
+              <div class="tab-pane" id="accountLogin" role="tabpanel">
+                <form class="modal-account__form js-account-form" id="formLogin" action="#" method="POST" data-toggle="validator">
+                  <div class="form-group">
+                    <input class="form-control form-control-sm" type="email" name="user_email" placeholder="E-mail address" required="required"/>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control form-control-sm" type="password" name="user_pass" placeholder="Password" data-minlength="6" required="required"/>
+                    <div class="help-block">Your password must be at least 6 characters long</div>
+                  </div>
+                  <div class="d-flex flex-wrap justify-content-between align-items-center">
+                    <button class="btn btn-secondary btn--round mr-2 mb-2" type="submit">sign in
+                    </button>
+                    <p class="mb-2"><a class="js-toggle-account" href="#" data-account="forgot">Forgot your password?</a></p>
+                  </div>
+                  <div class="d-inline-block my-2 w-100">
+                    <div class="social-sign">
+                      <div class="divider divider-horizontal">
+                        <h5 class="font-weight-normal mx-2">Or click to sign in</h5>
+                      </div>
+                      <ul class="social-sign__list row">
+                        <li class="col col-sm-6"><a class="nav-link" href="#"><img class="nav-icon img-fluid mr-2" src="img/facebook.png" alt="#"/><span class="nav-text">Connect with Facebook</span></a></li>
+                        <li class="col col-sm-6"><a class="nav-link" href="#"><img class="nav-icon img-fluid mr-2" src="img/google-plus.png" alt="#"/><span class="nav-text">Connect with Google</span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </form>
+                <div class="modal-footer d-block">
+                  <p class="fz-small mb-0"><em>By accessing your account, you agree to our  <a href="#">Terms and Conditions</a> and   <a href="#">Privacy Policy</a></em></p>
+                </div>
+              </div>
+              <div class="tab-pane active show" id="accountRegist" role="tabpanel">
+                <form class="modal-account__form js-account-form" id="formRegist" action="#" method="POST" data-toggle="validator">
+                  <div class="form-group">
+                    <input class="form-control form-control-sm" type="text" name="user_name" placeholder="First Name" required="required"/>
+                    <div class="help-block">Please enter your name</div>
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control form-control-sm" type="text" name="user_last_name" placeholder="Last Name" required="required"/>
+                    <div class="help-block">Please enter your last name</div>
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control form-control-sm" type="email" name="user_email" placeholder="E-mail address" required="required"/>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control form-control-sm" id="userPass" type="password" name="user_pass" placeholder="Password" data-minlength="6" required="required"/>
+                    <div class="help-block">Your password must be at least 6 characters long</div>
+                  </div>
+                  <div class="form-group">
+                    <input class="form-control form-control-sm" type="password" name="user_pass_confirm" placeholder="Confirm Password" data-match="#userPass" required="required"/>
+                    <div class="help-block">Please enter the same password as above</div>
+                  </div>
+                  <div class="form-group">
+                    <label class="custom-control custom-checkbox">
+                      <input class="custom-control-input" id="agreePolicy" type="checkbox" required><span class="custom-control-label">I have read and agree to the  <a href="#">Terms of Use</a> and the  <a href="#">Privacy Policy.</a></span>
+                    </label>
+                    <div class="help-block">Please accept our policy</div>
+                  </div>
+                  <p class="mb-4 d-flex justify-content-center justify-content-sm-start">
+                    <button class="btn btn-secondary btn--round" type="submit">Create Account</button>
+                  </p>
+                  <div class="d-inline-block my-2 w-100">
+                    <div class="social-sign">
+                      <div class="divider divider-horizontal">
+                        <h5 class="font-weight-normal mx-2">Or click to sign in</h5>
+                      </div>
+                      <ul class="social-sign__list row">
+                        <li class="col col-sm-6"><a class="nav-link" href="#"><img class="nav-icon img-fluid mr-2" src="img/facebook.png" alt="#"/><span class="nav-text">Sign up with Facebook</span></a></li>
+                        <li class="col col-sm-6"><a class="nav-link" href="#"><img class="nav-icon img-fluid mr-2" src="img/google-plus.png" alt="#"/><span class="nav-text">Sign up with Google</span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="modal-footer d-block">
+                    <div class="form-group">
+                      <label class="custom-control custom-checkbox">
+                        <input class="custom-control-input" id="dispatchEmail" type="checkbox"><span class="custom-control-label">Please send me Travelocity.com emails with travel deals, special offers, and other information.</span>
+                      </label>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class="tab-pane" id="accountForgot" role="tabpanel">
+                <form class="modal-account__form" id="formForgot" action="#" method="POST" data-toggle="validator">
+                  <div class="form-group">
+                    <input class="form-control form-control-sm" type="email" name="user_email" placeholder="E-mail address" required>
+                    <div class="help-block with-errors"></div>
+                  </div>
+                  <p class="text-center">We will email you instructions for resetting your password.</p>
+                  <p class="d-flex justify-content-center">
+                    <button class="btn btn-secondary btn--round" type="submit">Retrieve Password
+                    </button>
+                  </p>
+                  <p class="d-flex justify-content-center"><a class="js-toggle-account mr-3" href="#" data-account="regist">Create a new account</a><a class="js-toggle-account" href="#" data-account="login">Return to Sign In</a></p>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <header class="page-header">
+      <div class="panel-fixed">
+        <div class="page-header__top bg-white js-header-top js-top-panel">
+          <div class="top-div">
+            <div class="container">
+              <div class="wrap">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At, odit.</p>
+                <div class="times"><img src="img/times.png" alt=""></div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row align-items-center">
+              <div class=" col col-3 "> 
+                <a class="navbar-logo d-inline-flex align-items-center" href="index-2.html">
+                  <img class="" src="img/logo (2).png" alt="#"/>
+                </a></div>
+          
+              <div class="col  col-9  d-flex justify-content-end">
+               <div class="flagarea after">
+                  <div class="flag"><img src="./img/en.svg" alt=""><span>ENG</span></div>
+                  <ul>
+                    <li><a href="#"><img src="img/en.svg" alt="Flag"><span>United States - English</span></a></li>
+                    <li><a href="#"><img src="img/en.svg" alt="Flag"><span>United States - English</span></a></li>
+                    <li><a href="#"><img src="img/en.svg" alt="Flag"><span>United States - English</span></a></li>
+                    <li><a href="#"><img src="img/en.svg" alt="Flag"><span>United States - English</span></a></li>
+                  </ul>
+              </div>
+              <!-- <div class="search after "><img src="./img/search.png" alt=""></div> -->
+              <div class="phoneArea">
+                  <div class="picon">
+                      <img src="img/phone-call.png" alt="">
+                  </div>
+                  <div class="text">
+                      <p>Call Us Toll-Free 24/7: <a  href="
+                        "> 1-650-263-1714</a></p>
+                      <div class="number">
+                          Discount ID: <a href="" class="idhover"> 25-66-57-6 <span class="hover">Individual Discount ID gives you an opportunity to book tickets at special discount or at exclusive price.</span></a></div>
+                  </div>
+              </div>
+            </div>
+             
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="btn-toggle btn btn-light d-lg-none btn-toggle-nav" type="button" data-toggle="collapse" data-target="#navPanel"><img src="img/menu.png" alt=""></button>
+      <nav class="main-nav d-flex collapse d-lg-block" id="navPanel">
+        <div class="main-nav__container d-flex">
+          <div class="container">
+            <div class="main-menu ">
+              <div class="loginarea">
+                <ul class="nav nav-panel">
+                  <li class="nav-item d-flex"><a class="nav-link btn btn-light js-toggle-account" href="#modalAccount" data-toggle="modal" role="button" data-account="login"><img src="img/enter.png" alt=""><span>log in</span></a>
+                  </li>
+                  <li class="nav-item d-flex"><a class="nav-link btn btn-light " href="#" >
+                    <!-- <img src="img/logout.png" alt=""> -->
+                    <span>Support</span></a>
+                  </li>
+                </ul>
+              </div>
+              <ul class="main-nav__list nav d-flex" id="navMenu">
+                <li class="nav-item dropdown"><a class="nav-link fw-bold text-uppercase" href="#"><span>Flights</span><i class="caret fa fa-angle-down ml-2"></i> <img src="img/down.png" alt=""> </a>
+                  <ul class="dropdown-menu">
+                    <div class="memutitle"><a class="nav-link fw-bold text-uppercase" href="#"><span>Top Deals</span><i class="caret fa fa-angle-down ml-2"></i> <img src="img/down.png" alt=""> </a>
+                      <ul class="">
+                        <li class="nav-item"><a class="nav-link" href="index-2.html"><span>Top Airline Deals </span></a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="index-account.html"><span>Cheap Flight Tickets</span></a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="index-video.html"><span>Group Travel</span></a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="index-video.html"><span>Multi City Flights</span></a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="index-video.html"><span>
+                          One-Way Flights</span></a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="index-video.html"><span>Non-Stop Flights</span></a>
+                        </li>
+                        <a href="#">See All</a>
+                      </ul>
+                    </div>
+                    <div class="memutitle"><a class="nav-link fw-bold text-uppercase" href="#"><span>Premium Cabin Flights</span><i class="caret fa fa-angle-down ml-2"></i> <img src="img/down.png" alt=""> </a>
+                      <ul class="">
+                        <li class="nav-item"><a class="nav-link" href="index-2.html"><span>Premium Economy Flights</span></a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="index-account.html"><span>Business Class Flights</span></a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="index-video.html"><span>First Class Flights</span></a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="index-video.html"><span>Business Airlines Deals</span></a>
+                        </li>
+                      
+                      </ul>
+                    </div>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown"><a class="nav-link fw-bold text-uppercase" href="#"><span>Top Deals</span><i class="caret fa fa-angle-down ml-2"></i> <img src="img/down.png" alt=""> </a>
+                  <ul class="dropdown-menu">
+                    <li class="nav-item"><a class="nav-link" href="index-2.html"><span>Top Airline Deals </span></a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="index-account.html"><span>Cheap Flight Tickets</span></a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="index-video.html"><span>Group Travel</span></a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="index-video.html"><span>Multi City Flights</span></a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="index-video.html"><span>
+                      One-Way Flights</span></a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="index-video.html"><span>Non-Stop Flights</span></a>
+                    </li>
+                    <a href="#">See All</a>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown"><a class="nav-link fw-bold text-uppercase" href="#"><span>Flights From US </span><i class="caret fa fa-angle-down ml-2"></i> <img src="img/down.png" alt=""> </a>
+                  <ul class="dropdown-menu">
+                    
+                        <li class="nav-item"><a class="nav-link" href="index-2.html"><span>To Asia</span></a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="index-account.html"><span>To Africa</span></a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="index-video.html"><span>To Europe</span></a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="index-video.html"><span>
+                          To Middle East</span></a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="index-video.html"><span>
+                          To India & ISC</span></a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="index-video.html"><span>To Oceania</span></a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="index-video.html"><span>To Latin America</span></a>
+                        </li>
+                        <a href="#">See All</a>
+                      </ul>
+                    
+                      </li>
+                      <li class="nav-item dropdown"><a class="nav-link fw-bold text-uppercase" href="#"><span>Flights To US</span><i class="caret fa fa-angle-down ml-2"></i> <img src="img/down.png" alt=""> </a>
+                        <ul class="dropdown-menu">
+                          <li class="nav-item"><a class="nav-link" href="index-2.html"><span>From Asia</span></a>
+                          </li>
+                          <li class="nav-item"><a class="nav-link" href="index-account.html"><span>From Africa</span></a>
+                          </li>
+                          <li class="nav-item"><a class="nav-link" href="index-video.html"><span>From Europe</span></a>
+                          </li>
+                          <li class="nav-item"><a class="nav-link" href="index-video.html"><span>
+                            
+                            From Middle East</span></a>
+                          </li>
+                          <li class="nav-item"><a class="nav-link" href="index-video.html"><span>
+                            
+                            From India & ISC</span></a>
+                          </li>
+                          <li class="nav-item"><a class="nav-link" href="index-video.html"><span>
+                            From Oceania</span></a>
+                          </li>
+                          <li class="nav-item"><a class="nav-link" href="index-video.html"><span>
+                            From Latin America</span></a>
+                          </li>
+                          <a href="#">See All</a>
+                        </ul>
+                      </li>
+                    
+                <!-- <li class="nav-item dropdown"><a class="nav-link fw-bold text-uppercase" href="#"><span>Support</span><i class="caret fa fa-angle-down ml-2"></i> <img src="img/down.png" alt=""> </a>
+                  <ul class="dropdown-menu">
+                    <li class="nav-item"><a class="nav-link" href="index-2.html"><span>Customer Service</span></a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="index-account.html"><span>My Booking</span></a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="index-video.html"><span>FAQ</span></a>
+                    </li>
+                  </ul>
+                </li> -->
+                <!-- <li class="nav-item dropdown"><a class="nav-link fw-bold text-uppercase" href="#"><span>About</span><i class="caret fa fa-angle-down ml-2"></i> <img src="img/down.png" alt=""> </a>
+                  <ul class="dropdown-menu">
+                    <li class="nav-item"><a class="nav-link" href="index-2.html"><span>About Us</span></a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="index-account.html"><span>Reviews</span></a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="index-video.html"><span> Video</span></a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="index-video.html"><span> Customer Stories</span></a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="index-video.html"><span> Contact Us</span></a>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="index-video.html"><span> Blog</span></a>
+                    </li>
+                  </ul>
+                </li> -->
+              </ul>
+              <div class="search d-lg-none"><img src="./img/search.png" alt=""><span>Search</span></div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+<!-- banner section start  -->
+    <section>
+      <div class="">
+        <div class="responsive">
+          <div> <img src="img/banner33.jpg" alt=""></div>
+          <div> <img src="img/banner22.jpg" alt=""></div>
+          <div> <img src="img/banner44.jpg" alt=""></div>
+          <div> <img src="img/banner55.jpg" alt=""></div>
+          <div> <img src="img/banner66.jpg" alt=""></div>
+        </div>
+      </div>
+    </section>
+<!-- banner section end  -->
+
+<!-- Why to Book with Call Center start -->
+<section class="whycall">
+  <div class="container">
+     <p class="text-center "><img src="./img/phone-call.png" width="50" alt=""> Call us at<a href="">1-646-738-4952 </a> from 8 AM - 2 AM EST to get great deals!</p>
+    <div class="callwrap">
+      <h3>Why to Book with Call Center</h3>
+      <div class="row">
+        <div class="col-lg-3 col-6 mb-4 mb-lg-0">
+          <div class="contentwrap">
+            <div><img src="img/call-center-agent.png" alt=""></div>
+          <div class="textarea">
+            <p>Expert guidance by our</p>
+            <h4>Travel experts</h4>
+          </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-6 mb-4 mb-lg-0">
+          <div class="contentwrap">
+            <div><img src="img/customer.png" alt=""></div>
+            <div class="textarea">
+              <p>Immediate</p>
+              <h4>booking confirmation
+                </h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-6 mb-4 mb-lg-0">
+          <div class="contentwrap">
+            <div><img src="img/24-hours-support.png" alt=""></div>
+            <div class="textarea">
+              <p>24-hour
+                </p>
+              <h4>cancellation</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-3 col-6 mb-4 mb-lg-0">
+          <div class="contentwrap">
+            <div><img src="img/operation.png" alt=""></div>
+            <div class="textarea">
+              <p>plans</p>
+              <h4>Flexible payment</h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Why to Book with Call Center end -->
+
+
+
+
+<!-- call profile click show section start -->
+<div class="lowest">
+  <img src="img/times.png" alt="">
+<div class="lwrap">
+  <div class="lleftside">
+    <div><img src="img/callcenter.png" alt=""></div>
+    <h5 class="h2"><span>*FREE*</span> Exchange</h5>
+    <p>Ask your Agent <br>
+      How to Win-Win</p>
+      <h4>Save up to $300 off online
+        prices and a further $30 with the code.</h4>
+  </div>
+  <div class="rightside">
+    <h1>Lowest
+      <p>Fares of the Year</p></h1>
+      <div class="">by calling</div>
+      <a href="tel:1-650-263-1714">1-650-263-1714</a>
+      <p>Voucher Code: <span>ticketifly60</span></p>
+  </div>
+</div>
+</div>
+<!-- call profile click show section end -->
+<!-- call icon animation click number show area start -->
+<div class="shownumber">
+  <img src="img/times.png" alt="">
+  <div><h1>Call Your Personal Travel Agent Now</h1>
+    <h4>Exclusive unpublished deals and
+      <strong>FREE Planning</strong> are available!</h4>
+    </div>
+    <a href="tel:1-650-263-1714">1-650-263-1714</a>
+    <p>Discount ID : <strong>25-66-57-6</strong></p>
+    <span>Individual Discount ID gives you an opportunity to book tickets at special discount or at exclusive price.</span>
+</div>
+<!-- call icon animation click number show area end -->
+
+    <!-- <section>
+      <div class="callOnli">
+        
+        <div class="container">
+
+          <div class="row">
+            <div class="col-md-4 d-lg-flex">
+              <img src="img/cyber-security.png" alt="" style="width:50px ;">
+              <div class=" text-center">
+                <h4>
+                  Lowest Fares Guaranteed</h4>
+                  <span>Lorem ipsum dolor sit, amet consectetur  Dignissimos, saepe. Aliquid beatae error nihil animi cum accusamus ullam sapiente aspernatur!</span>
+              </div>
+            </div>
+            <div class="col-md-4 d-lg-flex">
+              <img src="img/4090248.png" alt="" style="width:50px ;">
+              <div class=" text-center">
+                <h4>
+                  Lowest Fares Guaranteed</h4>
+                  <span>Lorem ipsum dolor sit, amet consectetur  Dignissimos, saepe. Aliquid beatae error nihil animi cum accusamus ullam sapiente aspernatur!</span>
+              </div>
+            </div>
+            <div class="col-md-4 d-lg-flex">
+              <img src="img/6680303.png" alt="" style="width:50px ;">
+              <div class=" text-center">
+                <h4>
+                  Lowest Fares Guaranteed</h4>
+                  <span>Lorem ipsum dolor sit, amet consectetur  Dignissimos, saepe. Aliquid beatae error nihil animi cum accusamus ullam sapiente aspernatur!</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- today,s best deals start from here -->
+    <section>
+      <div class="todayDeals">
+        <h2>Today’s Top Deals</h2>
+        <div class="container">
+          <div class="dealImg">
+            <div class="chot">
+              <a href="">
+                <img src="img/img1.jpg" alt="">
+                <span class="todytext  ">
+                  <p>Lorem ipsum dolor sit amet consectetur </p>
+                  <span class="btnarea">
+                    <p><span>from</span> <br> $200 t/r</p>
+                    <button class="">view</button>
+                  </span>
+                </span>
+              </a>
+            </div>
+            <div class="middle"><a href="">
+                <img src="img/img2.jpg" alt="">
+                <span class="todytext  ">
+                  <p>Lorem ipsum dolor sit amet consectetur </p>
+                  <span class="btnarea">
+                    <p><span>from</span> <br> $200 t/r</p>
+                    <button class="">view</button>
+                  </span>
+                </span>
+              </a>
+            </div>
+            <div class="chot"><a href="">
+                <img src="img/img3.jpg" alt="">
+                <span class="todytext ">
+                  <p>Lorem ipsum dolor sit amet consectetur </p>
+                  <span class="btnarea">
+                    <p><span>from</span> <br> $200 t/r</p>
+                    <button class="">view</button>
+                  </span>
+                </span>
+              </a>
+            </div>
+            <div class="middle"><a href="">
+                <img src="img/img4.jpg" alt="">
+                <span class="todytext  ">
+                  <p>Lorem ipsum dolor sit amet consectetur </p>
+                  <span class="btnarea">
+                    <p><span>from</span> <br> $200 t/r</p>
+                    <button class="">view</button>
+                  </span>
+                </span>
+              </a>
+            </div>
+            <div class="chot"><a href="">
+                <img src="img/img5.jpg" alt="">
+                <span class="todytext  ">
+                  <p>Lorem ipsum dolor sit amet consectetur </p>
+                  <span class="btnarea">
+                    <p><span>from</span> <br> $200 t/r</p>
+                    <button class="">view</button>
+                  </span>
+                </span>
+              </a>
+            </div>
+            <div class="big"><a href="">
+                <img src="img/blog/3.jpg" alt="">
+                <span class="todytext  ">
+                  <p>Lorem ipsum dolor sit amet consectetur </p>
+                  <span class="btnarea">
+                    <p><span>from</span> <br> $200 t/r</p>
+                    <button class="">view</button>
+                  </span>
+                </span>
+              </a>
+            </div>
+            <div class="middle"><a href="">
+                <img src="img/blog/5.jpg" alt="">
+                <span class="todytext  ">
+                  <p>Lorem ipsum dolor sit amet consectetur </p>
+                  <span class="btnarea">
+                    <p><span>from</span> <br> $200 t/r</p>
+                    <button class="">view</button>
+                  </span>
+                </span>
+              </a>
+            </div>
+            <div class="big"><a href="">
+                <img src="img/intro/item-5.jpg" alt="">
+                <span class="todytext  ">
+                  <p>Lorem ipsum dolor sit amet consectetur </p>
+                  <span class="btnarea">
+                    <p><span>from</span> <br> $200 t/r</p>
+                    <button class="">view</button>
+                  </span>
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- today,s best deals end here -->
+
+    <!-- location picture section start  -->
+    <section class="locationPic">
+      <div class="container">
+        <h3>Your top daily deals!</h3>
+        <p>Fly from <strong>Coxs Bazar</strong> to your favorite cities</p>
+        <ul>
+          <li>
+            <div><img src="img/YVR.jpg" alt=""></div>
+            <div class="locatinImg"><p>Vancouver <span>Canada</span></p>
+            </div>
+          </li>
+          <li>
+            <div><img src="img/YYC.jpg" alt=""></div>
+            <div class="locatinImg"><p>Vancouver <span>Canada</span></p>
+            </div>
+          </li>
+          <li>
+            <div><img src="img/YVR.jpg" alt=""></div>
+            <div class="locatinImg"><p>Vancouver <span>Canada</span></p>
+            </div>
+          </li>
+          <li>
+            <div><img src="img/TLV.jpg" alt=""></div>
+            <div class="locatinImg"><p>Vancouver <span>Canada</span></p>
+            </div>
+          </li>
+          <li>
+            <div><img src="img/SYD.jpg" alt=""></div>
+            <div class="locatinImg"><p>Vancouver <span>Canada</span></p>
+            </div>
+          </li>
+          <li>
+            <div><img src="img/SJD.jpg" alt=""></div>
+            <div class="locatinImg"><p>Vancouver <span>Canada</span></p>
+            </div>
+          </li>
+          <li>
+            <div><img src="img/JFK.jpg" alt=""></div>
+            <div class="locatinImg"><p>Vancouver <span>Canada</span></p>
+            </div>
+          </li>
+          <li>
+            <div><img src="img/FCO.jpg" alt=""></div>
+            <div class="locatinImg"><p>Vancouver <span>Canada</span></p>
+            </div>
+          </li>
+          <li>
+            <div><img src="img/CDG.jpg" alt=""></div>
+            <div class="locatinImg"><p>Vancouver <span>Canada</span></p>
+            </div>
+          </li>
+          <li>
+            <div><img src="img/DEL.jpg" alt=""></div>
+            <div class="locatinImg"><p>Vancouver <span>Canada</span></p>
+            </div>
+          </li>
+          <li>
+            <div><img src="img/BKK.jpg" alt=""></div>
+            <div class="locatinImg"><p>Vancouver <span>Canada</span></p>
+            </div>
+          </li>
+          <li>
+            <div><img src="img/BKK.jpg" alt=""></div>
+            <div class="locatinImg"><p>Vancouver <span>Canada</span></p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- location picture section end -->
+<section class="domain">
+  <div class="container">
+    <h2>
+        ticketifly
+    </h2>
+    <div class="row">
+      <div class="col-lg-7 col-12 pilot">
+
+        <div class="grid">
+          <a href="" class="chot">
+            <img src="img/d1.jpeg" alt="">
+            <span class="todytext  ">
+              <p>Philippine Airlines Flight Sale to the PHILIPPINES </p>
+              <span class="btnarea">
+                <p><span>from</span> <br> $200 t/r</p>
+                <button class="">view</button>
+              </span>
+            </span>
+          </a>
+          <a href="" class="big">
+            <img src="img/d2.jpeg" alt="">
+            <span class="todytext  ">
+              <p>Philippine Airlines Flight Sale to the PHILIPPINES </p>
+              <span class="btnarea">
+                <p><span>from</span> <br> $200 t/r</p>
+                <button class="">view</button>
+              </span>
+            </span>
+          </a>
+          <a href="" class="chot">
+            <img src="img/d3.jpeg" alt="">
+            <span class="todytext  ">
+              <p>Philippine Airlines Flight Sale to the PHILIPPINES </p>
+              <span class="btnarea">
+                <p><span>from</span> <br> $200 t/r</p>
+                <button class="">view</button>
+              </span>
+            </span>
+          </a>
+        </div>
+        <div class="grid">
+          <a href="" class="chot">
+            <img src="img/pilot1.jpg" alt="">
+            <span class="todytext  ">
+              <p>Philippine Airlines Flight Sale to the PHILIPPINES </p>
+              <span class="btnarea">
+                <p><span>from</span> <br> $200 t/r</p>
+                <button class="">view</button>
+              </span>
+            </span>
+          </a>
+          <a href="" class="big">
+            <img src="img/pilot2.jpg" alt="">
+            <span class="todytext  ">
+              <p>Philippine Airlines Flight Sale to the PHILIPPINES </p>
+              <span class="btnarea">
+                <p><span>from</span> <br> $200 t/r</p>
+                <button class="">view</button>
+              </span>
+            </span>
+          </a>
+          <a href="" class="chot">
+            <img src="img/d3.jpeg" alt="">
+            <span class="todytext  ">
+              <p>Philippine Airlines Flight Sale to the PHILIPPINES </p>
+              <span class="btnarea">
+                <p><span>from</span> <br> $200 t/r</p>
+                <button class="">view</button>
+              </span>
+            </span>
+          </a>
+        </div>
+        <div class="grid">
+          <a href="" class="chot">
+            <img src="img/pilot5.jpg" alt="">
+            <span class="todytext  ">
+              <p>Philippine Airlines Flight Sale to the PHILIPPINES </p>
+              <span class="btnarea">
+                <p><span>from</span> <br> $200 t/r</p>
+                <button class="">view</button>
+              </span>
+            </span>
+          </a>
+          <a href="" class="big">
+            <img src="img/pilot4.jpg" alt="">
+            <span class="todytext  ">
+              <p>Philippine Airlines Flight Sale to the PHILIPPINES </p>
+              <span class="btnarea">
+                <p><span>from</span> <br> $200 t/r</p>
+                <button class="">view</button>
+              </span>
+            </span>
+          </a>
+          <a href="" class="chot">
+            <img src="img/pilot2.jpg" alt="">
+            <span class="todytext  ">
+              <p>Philippine Airlines Flight Sale to the PHILIPPINES </p>
+              <span class="btnarea">
+                <p><span>from</span> <br> $200 t/r</p>
+                <button class="">view</button>
+              </span>
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="col-lg-5 sidebararea col-12">
+        <h4>Our customers saved this week:</h4>
+        <div class="vertical">
+          <div class="contentwraper">
+            <div class="leftside">
+              <div><img src="img/download (24).jpg" alt=""></div>
+              <p>
+                Washington - Frankfurt <br>
+                <span>United Airlines</span></p>
+            </div>
+            <div class="rightside">
+              $300
+            </div>
+          </div>
+          <div class="contentwraper">
+            <div class="leftside">
+              <div><img src="img/download (22).jpg" alt=""></div>
+              <p>
+                Washington - Frankfurt <br>
+                <span>United Airlines</span></p>
+            </div>
+            <div class="rightside">
+              $300
+            </div>
+          </div>
+          <div class="contentwraper">
+            <div class="leftside">
+              <div><img src="img/download (23).jpg" alt=""></div>
+              <p>
+                Washington - Frankfurt <br>
+                <span>United Airlines</span></p>
+            </div>
+            <div class="rightside">
+              $300
+            </div>
+          </div>
+          <div class="contentwraper">
+            <div class="leftside">
+              <div><img src="img/images (7).jpg" alt=""></div>
+              <p>
+                Washington - Frankfurt <br>
+                <span>United Airlines</span></p>
+            </div>
+            <div class="rightside">
+              $300
+            </div>
+          </div>
+          <div class="contentwraper">
+            <div class="leftside">
+              <div><img src="img/images (8).jpg" alt=""></div>
+              <p>
+                Washington - Frankfurt <br>
+                <span>United Airlines</span></p>
+            </div>
+            <div class="rightside">
+              $300
+            </div>
+          </div>
+          <div class="contentwraper">
+            <div class="leftside">
+              <div><img src="img/images (9).jpg" alt=""></div>
+              <p>
+                Washington - Frankfurt <br>
+                <span>United Airlines</span></p>
+            </div>
+            <div class="rightside">
+              $300
+            </div>
+          </div>
+          <div class="contentwraper">
+            <div class="leftside">
+              <div><img src="img/2438080.png" alt=""></div>
+              <p>
+                Washington - Frankfurt <br>
+                <span>United Airlines</span></p>
+            </div>
+            <div class="rightside">
+              $300
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Get Instant FREE access to unpublished hand-picked deals! -->
+    <!-- your bast email enter section start from here -->
+    <!-- <section>
+      <div class="bestEmail">
+        <div class="container">
+          <h4 class="headertitle">Get Instant FREE access to unpublished hand-picked deals!</h4>
+          <p class="subheading">There is a reason why more than 292,000 travelers choose Ticketifly Tickets to save on their flights!</p>
+          <form action="">
+            <p>
+              <input placeholder="Enter Your Best Email " type="email">
+          </p>
+            <button type="submit">subscribe</button>
+          </form>
+          <div>100% Privacy Guaranteed! By providing your email you consent to receive occasional promotional Emails from Ticketiflytickets.com. You also agree to</div>
+          <span>our <a href="">T&Cs</a> and <a href="">Privacy Policy</a></span>
+        </div>
+      </div>
+    </section> -->
+    <!-- your bast email enter section end  here -->
+
+
+
+    <!-- commend section start from here -->
+    <section>
+      <div class="recommend">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-md-6 col-12 text-center mb-2 mb-md-0">
+              <h4 class="">97% Of Travelers Recommend Ticketifly Tickets</h4>
+            </div>
+            <div class="col-md-6 d-flex align-items-center justify-content-center col-12">
+              <div class="star d-flex pr-2">
+                <span><img style="width:20px ;" src="img/7589102.png" alt=""></span>
+                <span><img style="width:20px ;" src="img/7589102.png" alt=""></span>
+                <span><img style="width:20px ;" src="img/7589102.png" alt=""></span>
+                <span><img style="width:20px ;" src="img/7589102.png" alt=""></span>
+                <span><img style="width:20px ;" src="img/7589102.png" alt=""></span>
+              </div>
+              <p>4.7 out of 5 Based on 416079 reviews</p>
+            </div>
+          </div>
+          <div class="sliders">
+            <div class="commendSlider">
+              <div class="slide-box ">
+                
+                <div class="profileImg">
+                    <img src="img/download (22).jpg" alt="">
+                </div>
+                <div class="d-flex justify-content-between">
+                  <h4>Mehedi Hasan</h4>
+                  <div class="star d-flex">
+                    <span><img style="width:20px;height: 20px;" src="img/7589102.png" alt=""></span>
+                    <span><img style="width:20px;height: 20px;" src="img/7589102.png" alt=""></span>
+                    <span><img style="width:20px;height: 20px;" src="img/7589102.png" alt=""></span>
+                    <span><img style="width:20px;height: 20px;" src="img/7589102.png" alt=""></span>
+                    <span><img style="width:20px;height: 20px;" src="img/7589102.png" alt=""></span>
+                  </div>
+
+                </div>
+                <samp>Charlotte - London
+                </samp>
+                <p>Lorem ipsum dolor sit amet consectetur  Adipisci sapiente nihil ipsum sit deleniti. Obcaecati ullam laborum quisquam! Amet neque aspernatur.</p>
+                <span>04/05/2022</span>
+                
+              </div>
+              <div class="slide-box">
+                
+                <div class="profileImg">
+                    <img src="img/download (23).jpg" alt="">
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <h4>Mehedi Hasan</h4>
+                    <div class="star d-flex">
+                      <span><img style="width:20px;height: 20px;" src="img/7589102.png" alt=""></span>
+                      <span><img style="width:20px;height: 20px;" src="img/7589102.png" alt=""></span>
+                      <span><img style="width:20px;height: 20px;" src="img/7589102.png" alt=""></span>
+                      <span><img style="width:20px;height: 20px;" src="img/7589102.png" alt=""></span>
+                      <span><img style="width:20px;height: 20px;" src="img/7589102.png" alt=""></span>
+                    </div>
+  
+                  </div>
+                  <samp>Charlotte - London
+                  </samp>
+                  <p>Lorem ipsum dolor sit amet consectetur  Adipisci sapiente nihil ipsum sit deleniti. Obcaecati ullam laborum quisquam! Amet neque aspernatur.</p>
+                  <span>04/05/2022</span>
+        
+              </div>
+              <div class="slide-box">
+                
+                
+                <div class="profileImg">
+                    <img src="img/download (24).jpg" alt="">
+                </div>
+                <div class="d-flex justify-content-between">
+                  <h4>Mehedi Hasan</h4>
+                  <div class="star d-flex">
+                    <span><img style="width:20px;height: 20px;" src="img/7589102.png" alt=""></span>
+                    <span><img style="width:20px;height: 20px;" src="img/7589102.png" alt=""></span>
+                    <span><img style="width:20px;height: 20px;" src="img/7589102.png" alt=""></span>
+                    <span><img style="width:20px;height: 20px;" src="img/7589102.png" alt=""></span>
+                    <span><img style="width:20px;height: 20px;" src="img/3893865.png" alt=""></span>
+                  </div>
+
+                </div>
+                <samp>Charlotte - London
+                </samp>
+                <p>Lorem ipsum dolor sit amet consectetur  Adipisci sapiente nihil ipsum sit deleniti. Obcaecati ullam laborum quisquam! Amet neque aspernatur.</p>
+                <span>04/05/2022</span>
+        
+              </div>
+              <div class="slide-box">
+                
+                <div class="profileImg">
+                    <img src="img/images (7).jpg" alt="">
+                </div>
+                <div class="d-flex justify-content-between">
+                  <h4>Mehedi Hasan</h4>
+                  <div class="star d-flex">
+                    <span><img style="width:20px;height: 20px;" src="img/7589102.png" alt=""></span>
+                    <span><img style="width:20px;height: 20px;" src="img/7589102.png" alt=""></span>
+                    <span><img style="width:20px;height: 20px;" src="img/7589102.png" alt=""></span>
+                    <span><img style="width:20px;height: 20px;" src="img/7589102.png" alt=""></span>
+                    <span><img style="width:20px;height: 20px;" src="img/7589102.png" alt=""></span>
+                  </div>
+
+                </div>
+                <samp>Charlotte - London
+                </samp>
+                <p>Lorem ipsum dolor sit amet consectetur  Adipisci sapiente nihil ipsum sit deleniti. Obcaecati ullam laborum quisquam! Amet neque aspernatur.</p>
+                <span>04/05/2022</span>
+                
+        
+              </div>
+              <div class="slide-box">
+                
+                <div class="profileImg">
+                    <img src="img/images (8).jpg" alt="">
+                </div>
+                <div class="d-flex justify-content-between">
+                  <h4>Mehedi Hasan</h4>
+                  <div class="star d-flex">
+                    <span><img style="width:20px;height: 20px;" src="img/7589102.png" alt=""></span>
+                    <span><img style="width:20px;height: 20px;" src="img/7589102.png" alt=""></span>
+                    <span><img style="width:20px;height: 20px;" src="img/7589102.png" alt=""></span>
+                    <span><img style="width:20px;height: 20px;" src="img/7589102.png" alt=""></span>
+                    <span><img style="width:20px;height: 20px;" src="img/3893865.png" alt=""></span>
+                  </div>
+
+                </div>
+                <samp>Charlotte - London
+                </samp>
+                <p>Lorem ipsum dolor sit amet consectetur  Adipisci sapiente nihil ipsum sit deleniti. Obcaecati ullam laborum quisquam! Amet neque aspernatur.</p>
+                <span>04/05/2022</span>
+                
+        
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- conmmend section end here  -->
+
+    <section>
+      <div class="filterLocation">
+        <h2>Top Round-Trip Flight Deals</h2>
+        <div class="container">
+          <div class="btnlist">
+            <li data-filter="all" class="active">All</li>
+            <li data-filter="NorthAmerica" >North America</li>
+            <li data-filter="Asia"> Asia</li>
+            <li data-filter="Africa"> Africa</li>
+            <li data-filter="Europe"> Europe</li>
+            <li data-filter="mena"> Middle East & North Africa</li>
+            <li data-filter="LatinAmerica"> Latin America</li>
+            <li data-filter="Oceania"> Oceania</li>
+            <li data-filter="IndiaISC"> India & ISC</li>
+          </div>
+          <div class="filterItem">
+            <div class="item-wrap NorthAmerica Africa">
+            <a class="slide-item slide1 ">
+              <div class="innerTe"><h5>Miami </br> United States</h5>
+                <p>from</p>
+                <span>$199 r/t</span>
+              </div>
+            </a>
+            </div>
+            <div class="item-wrap Africa Asia">
+            <a class="slide-item slide2 ">
+              <div class="innerTe"><h5>Miami </br> United States</h5>
+                <p>from</p>
+                <span>$199 r/t</span>
+              </div>
+            </a>
+            </div>
+            <div class="item-wrap Asia">
+            <a class="slide-item slide3 ">
+              <div class="innerTe"><h5>Miami </br> United States</h5>
+                <p>from</p>
+                <span>$199 r/t</span>
+              </div>
+            </a>
+            </div>
+            <div class="item-wrap Asia">
+            <a class="slide-item slide4 ">
+              <div class="innerTe"><h5>Miami </br> United States</h5>
+                <p>from</p>
+                <span>$199 r/t</span>
+              </div>
+            </a>
+            </div>
+            <div class="item-wrap Asia">
+            <a class="slide-item slide5 ">
+              <div class="innerTe"><h5>Miami </br> United States</h5>
+                <p>from</p>
+                <span>$199 r/t</span>
+              </div>
+            </a>
+            </div>
+            <div class="item-wrap NorthAmerica Africa">
+            <a class="slide-item slide6 ">
+              <div class="innerTe"><h5>Miami </br> United States</h5>
+                <p>from</p>
+                <span>$199 r/t</span>
+              </div>
+            </a>
+            </div>
+            <div class="item-wrap Asia">
+            <a class="slide-item slide7 ">
+              <div class="innerTe"><h5>Miami </br> United States</h5>
+                <p>from</p>
+                <span>$199 r/t</span>
+              </div>
+            </a>
+            </div>
+            <div class="item-wrap NorthAmerica Africa">
+            <a class="slide-item slide8 ">
+              <div class="innerTe"><h5>Miami </br> United States</h5>
+                <p>from</p>
+                <span>$199 r/t</span>
+              </div>
+            </a>
+            </div>
+            <div class="item-wrap NorthAmerica">
+            <a class="slide-item slide9 ">
+              <div class="innerTe"><h5>Miami </br> United States</h5>
+                <p>from</p>
+                <span>$199 r/t</span>
+              </div>
+            </a>
+            </div>
+            <div class="item-wrap NorthAmerica">
+            <a class="slide-item slide10 ">
+              <div class="innerTe"><h5>Miami </br> United States</h5>
+                <p>from</p>
+                <span>$199 r/t</span>
+              </div>
+            </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="intro__search">
+      <div class="container ">
+        <form action="animation.html" method="post">
+          <div class="row">
+            <div class="col-12">
+              <a href=""><img src="img/flight.png" alt="">Flights</a>
+            </div>
+          </div>
+          <div class="formcontent">
+            <div class="row justify-content-between">
+              <div class="col">
+                <ul>
+                  <li><input type="radio" name="radio" id="Round-Trip"> <label for="Round-Trip">Round-Trip</label></li>
+                  <li><input type="radio" name="radio" id="One-Way"> <label for="One-Way">One-Way</label></li>
+                  <li><a href="">Multi-City Flights</a></li>
+                </ul>
+              </div>
+              <div class="col">
+                <span>Cabin Class:</span>
+                <select name="cabin" id="">
+                  <option value="">Economy</option>
+                  <option value="premium-economy">Premium Economy</option>
+                  <option value="business">Business</option>
+                </select>
+              </div>
+            </div>
+            <div class="row btmbox ">
+              <div class="distination">
+                <li><input type="text" name="" placeholder="Depart Form" > <img src="img/airplane-flight.png" alt=""></li>
+                <div><img src="img/transfer.png" alt=""></div>
+                <li><input type="text" name="" placeholder="Arrive at" > <img src="img/landing.png" alt=""></li>
+              </div>
+              <div class="date">
+                <li><input type="datetime-local" name="" class="coustomdate"  placeholder="Departure date" > <img src="img/calendar.png" alt=""></li>
+                <li><input type="datetime-local" name="" class="coustomdate" placeholder="Return date" > <img src="img/calendar.png" alt=""></li>
+
+              </div>
+              <div class="passenger">
+                <input type="number" class="invisible d-none " value="">
+               <li > <samp>1passenger</samp>  <span><img src="img/down-arrow.png" style="width: 15px;" alt=""></span></li>
+               <div class="addpsgerwraper">
+                <div class="passengerAdd">
+                  <div>Adults <samp class="text-muted fs-6">(over 18)</samp></div>
+                  <div class="allbtn">
+                    <button onclick="sumtract(this)" type="button" class="btnwhite"><img src="img/minus-sign.png" alt=""></button>
+                    <span class="bgGray">1</span>
+                    <button onclick="addition(this)" type="button" class="btnwhite"><img src="img/add.png" alt=""></button>
+                  </div>
+                </div>
+                <div class="passengerAdd">
+                  <div>Children <samp class="text-muted fs-6">(under 18)</samp></div>
+                  <div class="allbtn">
+                    <button onclick="sumtract1(this)" type="button" class="btnwhite"><img src="img/minus-sign.png" alt=""></button>
+                    <span class="bgGray">0</span>
+                    <button onclick="addition(this)" type="button" class="btnwhite"><img src="img/add.png" alt=""></button>
+                  </div>
+                </div>
+                <div class="passengerAdd">
+                  <div>Infants <samp class="text-muted fs-6">(under 3)</samp></div>
+                  <div class="allbtn">
+                    <button onclick="sumtract1(this)" type="button" class="btnwhite"><img src="img/minus-sign.png" alt=""></button>
+                    <span class="bgGray">0</span>
+                    <button onclick="addition(this)" type="button" class="btnwhite"><img src="img/add.png" alt=""></button>
+                  </div>
+                </div>
+                <button type="button" class="ok btn btn-primary">Ok</button>
+              </div>
+              </div>
+            </div>
+            <div class="formbtn">
+              <button type="submit" class="btn btn-primary"> Search Flights </button>
+
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    
+   
+
+    <!-- search area  -->
+    <div class=" scerch_container">
+      <form action="" method="post">
+        <div class="formcontent">
+          <div class="row justify-content-between">
+            <div class="col">
+              <ul>
+                <li><input type="radio" name="radio" id="Round-Trip"> <label for="Round-Trip">Round-Trip</label></li>
+                <li><input type="radio" name="radio" id="One-Way"> <label for="One-Way">One-Way</label></li>
+                <li><a href="">Multi-City Flights</a></li>
+              </ul>
+            </div>
+            <div class="col">
+              <span>Cabin Class:</span>
+              <select name="cabin" id="">
+                <option value="">Economy</option>
+                <option value="premium-economy">Premium Economy</option>
+                <option value="business">Business</option>
+              </select>
+            </div>
+          </div>
+          <div class="row btmbox ">
+            <div class="distination">
+              <li><input type="text" name="" placeholder="Depart Form" > <img src="img/airplane-flight.png" alt=""></li>
+              <div><img src="img/transfer.png" alt=""></div>
+              <li><input type="text" name="" placeholder="Arrive at" > <img src="img/landing.png" alt=""></li>
+            </div>
+            <div class="date">
+              <li><input type="datetime-local" name="" id="coustomdate"  placeholder="Departure date" > <img src="img/calendar.png" alt=""></li>
+              <li><input type="datetime-local" name="" id="coustomdate" placeholder="Return date" > <img src="img/calendar.png" alt=""></li>
+    
+            </div>
+            <div class="passenger sicon">
+              <input type="number" class="invisible d-none " value="">
+             <li > <samp>1passenger</samp>  <span><img src="img/down-arrow.png" style="width: 15px;" alt=""></span></li>
+             <div class="addpsgerwraper">
+              <div class="passengerAdd">
+                <div>Adults<samp class="text-muted fs-6">(over 18)</samp></div>
+                <div class="allbtn">
+                  <button onclick="sumtractS(this)" type="button" class="btnwhite"><img src="img/minus-sign.png" alt=""></button>
+                  <span class="bgGray">1</span>
+                  <button onclick="additionS(this)" type="button" class="btnwhite"><img src="img/add.png" alt=""></button>
+                </div>
+              </div>
+              <div class="passengerAdd">
+                <div>Children <samp class="text-muted fs-6">(under 18)</samp></div>
+                <div class="allbtn">
+                  <button onclick="sumtract1S(this)" type="button" class="btnwhite"><img src="img/minus-sign.png" alt=""></button>
+                  <span class="bgGray">0</span>
+                  <button onclick="additionS(this)" type="button" class="btnwhite"><img src="img/add.png" alt=""></button>
+                </div>
+              </div>
+              <div class="passengerAdd">
+                <div>Infants <samp class="text-muted fs-6">(under 3)</samp></div>
+                <div class="allbtn">
+                  <button onclick="sumtract1S(this)" type="button" class="btnwhite"><img src="img/minus-sign.png" alt=""></button>
+                  <span class="bgGray">0</span>
+                  <button onclick="additionS(this)" type="button" class="btnwhite"><img src="img/add.png" alt=""></button>
+                </div>
+              </div>
+              <button type="button" class="ok btn btn-primary">Ok</button>
+            </div>
+            </div>
+          </div>
+          <div class="formbtn">
+            <button type="submit" class="btn btn-primary"> Search Flights </button>
+    
+          </div>
+      </div>
+
+      </form>
+    </div>
+
+    <section class="savemoney text-center">
+      <div class="container">
+        <h4 class="headertitle">Save Money & Time with Ticketifly Tickets</h4>
+        <p class="subheading">As one of the US leading travel agencies, we are 100% devoted to make sure your flight booking experience is worried-free. Whether you’re going on holiday, taking a business trip, or go home to your loved ones, ASAP Tickets is here to help you travel the world with the most affordable airfares. With our easy-to-use website along with 24/7 customer services, getting a FREE quote couldn’t be simpler. Remember, we are only one-call away and you are only one step away from your dream destination.</p>
+        <div class="box-grid">
+          <div>
+            <h3>1700+</h3>
+            <h4>Live Agents</h4>
+            <p>speak 20+ languages worldwide</p>
+          </div>
+          <div>
+            <h3>800,000+</h3>
+            <h4>Flights Booked</h4>
+            <p>with avg $287 savings per ticket</p>
+          </div>
+          <div>
+            <h3>120,000+</h3>
+            <h4>People Every Month</h4>
+            <p>request new flight quotes</p>
+          </div>
+          <div>
+            <h3>175,000+</h3>
+            <h4>Happy Return Clients</h4>
+            <p>with highest 5-star reviews</p>
+          </div>
+          <div>
+            <h3>1700+</h3>
+            <h4>Live Agents</h4>
+            <p>speak 20+ languages worldwide</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="fixCallAnimation">
+      <a href=""><img src="img/phone-call.png" alt=""></a>
+    </section>
+
+    <footer class="page-footer">
+      <!-- <div class="page-footer__cover jarallax" data-speed="0.5"><img class="jarallax-img" src="img/footer.jpg" alt="#"></div> -->
+      <div class="container mb-5 mb-lg-4">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-lg-4 mt-5">
+            <h3 class="h3 text-uppercase">TICKETIFLY</h3>
+            <ul class="page-footer__address">
+              <li class="mb-2"><strong class="float-left mr-1">A:</strong>
+                314-336 Bourke St, Melbourne VIC 3000, Australia
+              </li>
+              <li class="mb-2"><strong class="float-left mr-1">P:</strong>
+                24/7 customer support:
+                <a href="tel:#">1-222-2222-22-22</a>
+              </li>
+              <li class="mb-2"><strong class="float-left mr-1">E:</strong>
+                <a href="mailto:#">ticketifly@gmail.com</a>
+              </li>
+            </ul>
+            <h4 class="h4 mb-2">Follow us:</h4>
+            <ul class="footer-social d-flex flex-wrap">
+              <li class="mr-4"><a class="social-link" href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+              <li class="mr-4"><a class="social-link" href="#" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+              <li class="mr-4"><a class="social-link" href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+              <li class="mr-4"><a class="social-link" href="#" target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+              <li class="mr-4"><a class="social-link" href="#" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-4 mt-5">
+            <h3 class="h3 text-uppercase">customer support</h3>
+            <ul class="page-footer__support list-styled">
+              <li class="mb-2"><a href="#" target="_blank">Faq</a></li>
+              <li class="mb-2"><a href="#" target="_blank">How do I make a reservation?</a></li>
+              <li class="mb-2"><a href="#" target="_blank">Payment options</a></li>
+              <li class="mb-2"><a href="#" target="_blank">Booking tips</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-12 col-lg-4 mt-5">
+            <h3 class="h3 text-uppercase">get our best offers</h3>
+            <form class="subscribe-form" action="#" method="POST">
+              <div class="input-group input-group--lg flex-nowrap mb-4">
+                <input class="form-control form-control-lg" type="email" placeholder="Enter Your email" required>
+                <div class="input-group-append">
+                  <button class="btn btn-btn btn-light btn--round" type="submit"><i class="fa fa-send"></i>
+                  </button>
+                </div>
+              </div>
+              <p>We guarantee your confidentiality, and we also undertake not to transfer your email address to third parties.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="page-footer__copyright text-center">
+        <div class="container">
+          <div class="hr"></div>TICKETIFKY All rights reserved.<br/><a class="text-light text-uppercase" href="https://themeforest.net/user/netgon">Developer by R-creation
+            <script>document.write(new Date().getFullYear());</script></a>
+        </div>
+      </div>
+    </footer>
+    <!-- <div class="modal-map modal" id="modalMap" tabindex="-1">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header align-items-center py-2">
+            <h4 class="modal-title"><a class="d-flex align-items-center" href="hotel.html"><i class="icon mr-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 31.5 22.1"><path d="M0.3,10.3C0.3,10.3,0.3,10.3,0.3,10.3c-0.4,0.5-0.4,1.2,0,1.6l10,10c0,0,0,0,0,0c0.4,0.4,1.1,0.4,1.6,0 c0.4-0.4,0.4-1.1,0-1.6l-8-8h26.6c0.6,0,1.1-0.5,1.1-1.1c0,0,0,0,0,0c0-0.6-0.5-1.1-1.1-1.1H3.8l8-8c0.4-0.4,0.4-1.1,0-1.6 c0,0,0,0,0,0c-0.4-0.4-1.1-0.4-1.6,0L0.3,10.3z"/></svg></i><span class="title">Hotel</span></a></h4>
+            <button class="btn btn-secondary btn--round px-4" type="button" data-dismiss="modal">map close
+            </button>
+          </div>
+          <div class="map-contain" id="map"></div>
+        </div>
+      </div>
+    </div> -->
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD3gFKhVywUkygSxQEBdGVrI5-ZRrdjueA"></script> -->
+    <!-- <script src="js/maps.js"></script> -->
+    <!-- <script src="js/libs/moment.min.js"></script> -->
+    <!-- <script src="js/libs/wNumb.js"></script> -->
+    <!-- <script src="js/libs/nouislider.min.js"></script> -->
+    <script src="js/libs/jquery.min.js"></script>
+    <script src="js/libs/jquery-ui.min.js"></script>
+    <!-- <script src="js/libs/barba.min.js"></script> -->
+    <!-- <script src="js/libs/sticky-kit.min.js"></script> -->
+    <!-- <script src="js/libs/velocity.min.js"></script> -->
+    <!-- <script src="js/libs/velocity.ui.min.js"></script> -->
+    <script src="js/libs/jquery.waypoints.min.js"></script>
+    <!-- <script src="js/libs/popper.min.js"></script> -->
+    <script src="js/libs/bootstrap.min.js"></script>
+    <!-- <script src="js/libs/imagesloaded.pkgd.min.js"></script> -->
+    <!-- <script src="js/libs/masonry.pkgd.min.js"></script> -->
+    <!-- <script src="js/libs/isotope.pkgd.min.js"></script> -->
+    <script src="js/libs/ofi.min.js"></script>
+    <script src="js/libs/jarallax.min.js"></script>
+    <!-- <script src="js/libs/jarallax-video.min.js"></script> -->
+    <!-- <script src="js/libs/jarallax-element.min.js"></script> -->
+    <script src="js/libs/jquery.mCustomScrollbar.min.js"></script>
+    <!-- <script src="js/libs/swiper.min.js"></script> -->
+    <!-- <script src="js/libs/flatpickr/flatpickr.min.js"></script> -->
+    <!-- <script src="js/libs/flatpickr/rangePlugin.js"></script> -->
+    <!-- <script src="js/libs/select2.min.js"></script> -->
+    <!-- <script src="js/libs/select2/en.js"></script> -->
+    <!-- <script src="js/libs/jquery.mask.min.js"></script> -->
+    <!-- <script src="js/libs/validator.min.js"></script> -->
+    <!-- <script src="js/libs/jquery.barrating.min.js"></script> -->
+    <!-- <script src="js/libs/jquery.blueimp-gallery.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+    <script src="js/script.min.js"></script>
+    
+      <!-- slick slider js -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script src="js/demo-switcher.js"></script>
+    <script src="./js/main.js"></script>
+    <script>
+      config ={
+    altInput: true,
+    altFormat: "F j, Y",
+    dateFormat: "Y-m-d",
+}
+      flatpickr("input[type=datetime-local]", {config});
+  </script>
+  <script>
+          $('.responsive').slick({
+            infinite: true,
+            speed: 1000,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+            prevArrow:'<span class="next_arow"><i class="fas fa-chevron-left"></i></span>',
+            nextArrow:'<span class="prev_arow"><i class="fas fa-chevron-right"></i></span>',
+            
+});
+
+$('.commendSlider').slick({
+  infinite: true,
+  speed: 1000,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+   prevArrow:'<span class="next_arow"><i class="fas fa-chevron-left"></i></span>',
+   nextArrow:'<span class="prev_arow"><i class="fas fa-chevron-right"></i></span>',
+   responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2,
+      }
+    },
+    {
+      breakpoint: 500,
+      settings: {
+        slidesToShow: 1,
+      }
+    },
+  ]
+});
+
+$('.dealImg').slick({
+  infinite: true,
+  speed: 1000,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+   prevArrow:'<span class="next_arow"><i class="fas fa-chevron-left"></i></span>',
+   nextArrow:'<span class="prev_arow"><i class="fas fa-chevron-right"></i></span>',
+   responsive: [
+    {
+      breakpoint: 992,
+      settings: {
+        slidesToShow: 2,
+      }
+    },
+    {
+      breakpoint: 500,
+      settings: {
+        slidesToShow: 1,
+      }
+    },
+  ]
+});
+$('.pilot').slick({
+  infinite: true,
+  speed: 1000,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+   prevArrow:'<span class="next_arow d-none"><i class="fas fa-chevron-left"></i></span>',
+   nextArrow:'<span class="prev_arow d-none"><i class="fas fa-chevron-right"></i></span>',
+  
+});
+$('.vertical').slick({
+  infinite: true,
+  speed: 600,
+  slidesToShow: 2,
+  slidesToScroll:1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  // vertical:true,
+  prevArrow:'<span class="next_arow"><i class="fas fa-chevron-left"></i></span>',
+  nextArrow:'<span class="prev_arow "><i class="fas fa-chevron-right"></i></span>',
+});
+
+
+
+$(document).ready(function(){
+    $(".intro__search  form .formcontent .passenger li").click(function(){
+        $(".intro__search .passenger .addpsgerwraper").toggle(500);
+    })
+    $(".intro__search  button.ok.btn.btn-primary").click(function(){
+        $(".intro__search  .passenger .addpsgerwraper").hide(500);
+    })   
+
+})
+
+let passenger = $(".intro__search .passenger .addpsgerwraper .passengerAdd span");
+let passenger1 =Number( passenger[0].textContent);
+let passenger2 = Number(passenger[1].textContent);
+let passenger3 = Number(passenger[2].textContent);
+// let passenger34 = Number(passenger[3].html());
+let sum = passenger1 + passenger2 + passenger3;
+let btn;
+let count;
+$(".intro__search form .formcontent .passenger .invisible").val(Number(sum.slice(0,1)));
+
+// console.log(sum);
+function addition(e){
+    btn = e;
+    count = Number(btn.previousElementSibling.textContent)
+    if(count<=10){
+        ++count;
+    }
+    btn.previousElementSibling.innerHTML = count;
+     passenger1 =Number( passenger[0].textContent);
+     passenger2 = Number(passenger[1].textContent);
+     passenger3 = Number(passenger[2].textContent);
+    // console.log(passenger1);    
+    sum = passenger1 + passenger2 + passenger3;
+    // console.log(sum);
+    if(sum==1){
+        sum =  `${sum} passenger`;
+    }else{
+        sum =  `${sum} passengers`;
+
+    }
+    $(".intro__search form .formcontent .passenger li samp").text(sum);
+    $(".intro__search form .formcontent .passenger .invisible").val(Number(sum.slice(0,1)));
+
+}
+function sumtract(e){
+    btn = e;
+    count = Number(btn.nextElementSibling.textContent)
+    if(count>=2){
+        --count;
+    }
+    btn.nextElementSibling.innerHTML = count;
+     passenger1 =Number( passenger[0].textContent);
+     passenger2 = Number(passenger[1].textContent);
+     passenger3 = Number(passenger[2].textContent);
+    // console.log(passenger1);    
+    sum = passenger1 + passenger2 + passenger3;
+    // console.log(sum);
+    if(sum==1){
+        sum =  `${sum} passenger`;
+    }else{
+        sum =  `${sum} passengers`;
+        
+    }
+    $(".intro__search form .formcontent .passenger li samp").text(sum);
+    $(".intro__search form .formcontent .passenger .invisible").val(Number(sum.slice(0,1)));
+
+}
+function sumtract1(e){
+    btn = e;
+    count = Number(btn.nextElementSibling.textContent)
+    if(count>=1){
+        --count;
+    }
+    btn.nextElementSibling.innerHTML = count;
+     passenger1 =Number( passenger[0].textContent);
+     passenger2 = Number(passenger[1].textContent);
+     passenger3 = Number(passenger[2].textContent);
+    // console.log(passenger1);    
+    sum = passenger1 + passenger2 + passenger3;
+    // console.log(sum);
+    if(sum==1){
+        sum =  `${sum} passenger`;
+    }else{
+        sum =  `${sum} passengers`;
+
+    }
+    $(".intro__search form .formcontent .passenger li samp").text(sum);
+    $(".intro__search form .formcontent .passenger .invisible").val(Number(sum.slice(0,1)));
+
+
+}
+
+
+    </script>
+  </body>
+
+</html>
